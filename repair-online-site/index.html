@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REPAIR ONLINE — 1.20.1 인생약탈 PVP 서버</title>
+<meta name="description" content="REPAIR ONLINE — 부서진 것을 다시 일으키는 1.20.1 인생약탈 PVP 서버">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark">R</div>
+      <div class="name">REPAIR<b> ONLINE</b></div>
+    </div>
+    <nav class="primary">
+      <a href="index.html" class="active">홈</a>
+      <a href="cash.html">캐시 충전</a>
+      <a href="logs.html">로그 조회</a>
+      <a href="rules.html">법전</a>
+    </nav>
+    <div class="header-actions">
+      <div class="addr-chip">
+        <b data-addr>play.repaironline.xyz</b>
+        <button data-copy type="button">복사</button>
+      </div>
+      <a class="btn-discord" data-discord href="#">Discord</a>
+      <button class="sound-toggle" data-sound-toggle type="button" aria-pressed="false" title="효과음 끄기">
+        <svg class="wave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M4 9v6h4l5 5V4L8 9H4z"/>
+          <path d="M16 8a5 5 0 0 1 0 8"/>
+          <path d="M18.5 5.5a9 9 0 0 1 0 13"/>
+        </svg>
+        <svg class="slash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="position:absolute;">
+          <line x1="3" y1="3" x2="21" y2="21"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <canvas id="emberCanvas" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="badge"><span class="dot"></span>MINECRAFT JAVA 1.20.1</div>
+
+      <h1>REPAIR<br><span>ONLINE</span></h1>
+
+      <svg class="seam" viewBox="0 0 260 26" aria-hidden="true">
+        <path d="M4 13 L70 13 L84 4 L98 22 L112 4 L126 22 L140 4 L154 22 L168 13 L256 13"></path>
+        <circle cx="168" cy="13" r="3"></circle>
+      </svg>
+
+      <p class="tagline">부서진 것들이 다시 일어서는 곳 — 1.20.1 인생약탈 PVP 서버</p>
+
+      <div class="status-pill" id="statusPill">
+        <span class="led"></span>
+        <span id="statusText">서버 상태 확인 중…</span>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="cash.html">캐시 충전</a>
+        <a class="btn btn-ghost" data-discord href="#">Discord 참여</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="connect" id="connect">
+    <div class="wrap">
+      <div class="connect-card reveal">
+        <div class="stat-row">
+          <div>
+            <div class="stat-label">버전</div>
+            <div class="stat-value">1.20.1</div>
+          </div>
+          <div>
+            <div class="stat-label">주소</div>
+            <div class="stat-value mono" data-addr>play.repaironline.xyz</div>
+          </div>
+          <div>
+            <div class="stat-label">접속자</div>
+            <div class="stat-value" id="playerCount">확인 중</div>
+          </div>
+        </div>
+        <button class="copy-btn" data-copy data-copied-text="복사 완료!" type="button">서버 주소 복사</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">SERVER SYSTEM</div>
+        <h2>부서진 걸 다시 조립하는 서버</h2>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card reveal">
+          <div class="ico">약</div>
+          <h3>인생약탈 PVP</h3>
+          <p>죽으면 하트가 뺏기고, 이기면 상대의 장비까지 약탈하는 전투 중심 서버.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="ico">집</div>
+          <h3>핫플레이스 & 자택</h3>
+          <p>위험 구역 한복판에 내 집을 세우고, 표지판으로 출입자를 직접 관리.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="ico">力</div>
+          <h3>로어 능력치 시스템</h3>
+          <p>공격력·치명타·흡혈·방어력까지, 장비마다 다른 능력치를 새겨넣는 커스텀 스탯.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="ico">農</div>
+          <h3>농장 & 경제</h3>
+          <p>내 섬에서 농사짓고, 소지금·캐시로 돌아가는 자급자족형 경제 시스템.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="ico">花</div>
+          <h3>꽃도박</h3>
+          <p>뼛가루로 꽃을 피워 승부를 가르는, 이 서버에만 있는 별난 미니게임.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="ico">✦</div>
+          <h3>전용 리소스팩</h3>
+          <p>메뉴부터 아이템 아이콘까지, REPAIR ONLINE만의 룩앤필로 새로 그린 UI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner" id="cta">
+    <div class="wrap reveal">
+      <h2>망가진 것도, 새로 시작하는 것도<br>여기서는 다 괜찮습니다.</h2>
+      <p>서버 이용, 후원 캐시, 환불 문의는 Discord 고객센터에서 접수합니다.</p>
+      <a class="btn btn-primary" data-discord href="#">고객센터 열기</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-left">
+      <div class="mark"></div>
+      <div class="foot-addr">SERVER <b data-addr>play.repaironline.xyz</b> · Minecraft 1.20.1</div>
+    </div>
+    <ul class="foot-links">
+      <li><a href="terms.html">이용약관</a></li>
+      <li><a href="privacy.html">개인정보처리방침</a></li>
+      <li><a href="refund.html">환불 정책</a></li>
+      <li><a href="probability.html">확률형 아이템 안내</a></li>
+      <li><a data-discord href="#">고객센터</a></li>
+    </ul>
+  </div>
+  <div class="wrap copyright">
+    <span>© 2026 REPAIR ONLINE</span>
+    <span>MINECRAFT COMMUNITY SERVER · SUPPORT VIA DISCORD</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
